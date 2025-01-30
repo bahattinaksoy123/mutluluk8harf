@@ -46,9 +46,9 @@
 </head>
 <body>
     <div id="container">
-        <div id="nameA" class="name" style="position: absolute; top: 10%;">BAHATTİN</div>
+        <div id="nameA" class="name" style="position: absolute; top: 10%;"></div>
         <div id="countdown">8</div>
-        <div id="nameB" class="name" style="position: absolute; bottom: 10%;">BEYZANUR</div>
+        <div id="nameB" class="name" style="position: absolute; bottom: 10%;"></div>
     </div>
 
     <script>
@@ -68,10 +68,9 @@
                 nameA.style.top = positionA + "%";
                 nameB.style.bottom = positionB + "%";
             } else {
-                clearInterval(interval);
-                countdownElement.textContent = "❤️"; // Show heart
+                countdownElement.textContent = "Geç Kaldın"; // Show heart
                 setTimeout(() => {
-                    window.location.href = "tel:+905315245506";
+                    count = 8;
                 }, 2000);
             }
         }, 1000);
